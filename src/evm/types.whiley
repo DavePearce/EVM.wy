@@ -9,9 +9,3 @@ public type uint160 is (int r) where r >= 0 && r < EXP_160
 public type address is uint160
 
 public type map<T> is (T[] arr) where |arr| == EXP_160
-
-public final Message msg = {sender:0x0}
-
-public type Message is {
-    address sender
-}
